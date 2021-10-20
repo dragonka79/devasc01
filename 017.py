@@ -21,6 +21,3 @@ circle3 = Circle(3,17, "Red",False)
 print("Circle 1 circumfrence is: " , circle1.circumfrence())
 print("Circle 2 circumfrence is: " , circle2.circumfrence())
 print("Circle 3 circumfrence is: " , circle3.circumfrence())
-
-#comment
-#comment_2
