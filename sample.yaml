@@ -58,3 +58,8 @@ layer_config:
 
     5:
         layer_type: OutputLayer
+...
+---
+first: one
+second: 2
+layer_config: Black swan
