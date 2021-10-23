@@ -17,4 +17,4 @@ for e in root:
     print("")
 
     # Print the 'Id' attribute of the Element object
-    print(e.get("Id"))
+    print(e.get("id"))
