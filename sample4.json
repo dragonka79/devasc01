@@ -9,15 +9,14 @@
        "Active": true
     },
     {
-       "firstName": "James",
-       "lastName": "Smith",
+       "Name": {"FN": "James", "LN": "Smith"},
        "gender": "male",
        "age": 32,
        "number": "5678568567",
        "Active": false
     },
     {
-       "firstName": "Emily",
+       "Name": ["Emily", "Jones"],
        "lastName": "Jones",
        "gender": "female",
        "age": 24,
