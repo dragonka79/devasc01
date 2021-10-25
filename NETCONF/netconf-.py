@@ -1,4 +1,4 @@
-from ncclient import manager
+import ncclient.manager
 
 
 router = {"host": "ios-xe-mgmt-latest.cisco.com", "port": "10000",
