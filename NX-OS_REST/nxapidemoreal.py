@@ -19,3 +19,5 @@ payload = {
 
 response = requests.post(url, data=json.dumps(payload), headers=myheader, auth=(
     switchuser, switchpassword), verify=False).json()
+
+print(response)
