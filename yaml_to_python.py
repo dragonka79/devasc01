@@ -1,7 +1,7 @@
 import yaml
 from yaml import load, load_all
 
-stream = open('sample.yaml', 'r')
+stream = open('/home/zolcs/Documents/Devasc/github/devasc01/sample.yaml', 'r')
 documents = load_all(stream, Loader = yaml.FullLoader)
 
 print('Type of the yaml document: ', type(documents))
