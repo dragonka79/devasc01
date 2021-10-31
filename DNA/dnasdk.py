@@ -4,7 +4,7 @@ import time
 import calendar
 
 dna = api.DNACenterAPI(base_url='https://sandboxdnac2.cisco.com',
-                       username='devnetuser', password='Cisco123!')
+                       username='devnetuser', password='Cisco123!', version='1.2.10')
 
 
 ##### NETWORKS AND SITES ####
@@ -43,7 +43,7 @@ for device in devices.response:
     print(" ")
 
 # Get a specific device
-device = dna.devices.get_device_by_id('10cdbf6d-3672-4b4d-ae75-5b661fa0a5bc')
+device = dna.devices.get_device_by_id('beb47905-7b80-4e6e-b352-a04098cf79db')
 print(device)
 
 
