@@ -3,6 +3,8 @@ import json
 import time
 import calendar
 
+# Storing the session in 'dna' variable
+
 dna = api.DNACenterAPI(base_url='https://sandboxdnac2.cisco.com',
                        username='devnetuser', password='Cisco123!', version='1.2.10')
 
