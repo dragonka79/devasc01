@@ -11,14 +11,11 @@ response = requests.post(url, auth=(user, pw)).json()
 # print(response)
 token = response['Token']
 
-
 ############ GET CLIENT HEALTH STATS ################
 
 url = "https://sandboxdnac2.cisco.com/dna/intent/api/v1/client-health"
 
-querystring = {
-    "timestamp": ""
-}
+querystring = {"timestamp": ""}
 
 headers = {
     'x-auth-token': token,
@@ -40,28 +37,18 @@ print(
     f"Clients: {response['response'][0]['scoreDetail'][0]['clientCount']}")
 
 
-scores = response['response'
-                  ][
-    0
-]['scoreDetail'
-  ]
+scores = response['response'][0]['scoreDetail']
 
 for score in scores:
-    if score['scoreCategory'
-             ]['value'
-               ] == 'WIRED':
+    if score['scoreCategory']['value'] == 'WIRED':
         print(f"Wired Clients: {score['clientCount']}")
-        score_values = score['scoreList'
-                             ]
+        score_values = score['scoreList']
         for score_value in score_values:
             print(
                 f"  {score_value['scoreCategory']['value']}: {score_value['clientCount']}")
-    elif score['scoreCategory'
-               ]['value'
-                 ] == 'WIRELESS':
+    elif score['scoreCategory']['value'] == 'WIRELESS':
         print(f"Wireless Clients: {score['clientCount']}")
-        score_values = score['scoreList'
-                             ]
+        score_values = score['scoreList']
         for score_value in score_values:
             print(
                 f"  {score_value['scoreCategory']['value']}: {score_value['clientCount']}")
